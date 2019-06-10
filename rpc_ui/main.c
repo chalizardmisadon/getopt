@@ -91,7 +91,7 @@ void parse_cli_options(int argc, char *argv[])
 				}
 			} break;
 			case 'f': {
-				sockfd_ucast = 
+				// sockfd_ucast = 
 			} break;
 		}
 	}
