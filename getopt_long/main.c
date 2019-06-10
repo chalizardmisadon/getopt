@@ -32,7 +32,7 @@ int main (int argc, char **argv)
 		/* Detect the end of the options. */
 		if (c == -1) break;
 
-	switch (c) {
+		switch (c) {
 		case 0:
 			/* If this option set a flag, do nothing else now. */
 			if (long_options[option_index].flag != 0) break;
@@ -43,11 +43,11 @@ int main (int argc, char **argv)
 			break;
 
 		case 'a':
-			puts ("option -a\n");
+			printf ("option -a\n");
 			break;
 
 		case 'b':
-			puts ("option -b\n");
+			printf ("option -b\n");
 			break;
 
 		case 'c':
@@ -74,7 +74,7 @@ int main (int argc, char **argv)
 	/* Instead of reporting ‘--verbose’
 	and ‘--brief’ as they are encountered,
 	we report the final status resulting from them. */
-	if (verbose_flag) puts ("verbose flag is set");
+	if (verbose_flag) printf ("verbose flag is set\n");
 
 	/* Print any remaining command line arguments (not options). */
 	if (optind < argc)
