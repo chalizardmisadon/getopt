@@ -7,15 +7,26 @@
 .vscode
 .*/
 **/release
-**/build
+**/build/*
+Deviot/
 
 # ignore files
 *.patch
 *.o
+deviot.*
 
 # include makefiles
 !Makefile
 !makefile
 !*.mk
 !*.make
+!build/Makefile
+!build/makefile
+!build/*.mk
+!build/*.make
+
+# ignore sublime cache
+Package Control*
+PythonTestRunner*
+Preferences.sublime-settings
 
